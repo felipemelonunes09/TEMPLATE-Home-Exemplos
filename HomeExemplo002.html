@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+
+        .imgSlider{
+
+            height: 600px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .slider1{
+            background-image: url(img-clinic-1.jpg);
+        }
+
+        .slider2{
+            background-image: url(img-clinic-2.jpg);
+        }
+
+        .lightGreen{
+            background-color: rgb(208, 222, 187);
+        }
+
+        #expand:hover{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .nav-icon{
+            font-size: 30px;
+        }
+
+        .margin-extend {
+            margin-top: 70px;
+        }
+
+        footer{
+            background-color: forestgreen;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="head">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg fixed-top navbarMiddle p-3" id="teste">
+            <a class="navbar-brand text-success ml-5 mr-5"> <i class="far fa-hospital"></i> Navbar </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link text-success font-weight-bold"> Home </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link text-success"> Item 1 </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link text-success"> Item 2 </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-success" href="#"> Drop item 1 </a>
+                            <a class="dropdown-item text-success" href="#"> Drop item 2 </a>
+                            <a class="dropdown-item text-success" href="#"> Drop item 3 </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-success" href="#"> Drop item 4 </a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link text-success"> Item 3 </a>
+                    </li>
+                </ul>
+                <span class="m-2"> <a href="#"> <i class="fab fa-linkedin nav-icon"></i> </a>  </span>
+                <span class="m-2"> <a href="#"> <i class="fab fa-facebook-square nav-icon"></i> </a> </span>
+                <span class="m-2">  <button class="btn btn-sm btn-outline-success"> Contato </button> </span>
+            </div>
+        </nav>
+        <div class="carousel slide" data-ride="carousel" id="caroulselEx">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="imgSlider slider1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="imgSlider slider2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-sm-6 text-center">
+                <h1 class="display-3 text-success"> Titulo chamativo </h1>
+                <hr />
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-3 col-sm-12 text-center">
+                <img src="perfil.jpg" class="rounded-circle" width="250" height="250" />
+            </div>
+            <div class="col-lg-9 col-sm-12 ">
+                <h1 class="display-4 text-left"> Nome da Pessoa </h1>
+                <h4 class="font-weight-light bold text-justify">
+                    Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                    vestibulum donec habitasse metus vehicula nunc.
+                </h4>
+                <p class="font-weight-light text-justify">
+                    Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                    vestibulum donec habitasse metus vehicula nunc, diam placerat donec a hendrerit lectus sit aenean himenaeos.
+                    Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                </p>
+                <button class="btn btn-lg rounded-pill btn-outline-success mt-1"> Saiba Mais <i class="fas fa-angle-double-right"></i> </button>
+            </div>
+        </div>
+    </section>
+    <section class="container margin-extend">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-3 text-center">
+                <h1 class="display-3"> <i class="far fa-clock text-success"></i></h1>
+                <p class="text-center">
+                    Lorem ipsum mollis malesuada justo pharetra nibh
+                </p>
+                <hr class="bg-success" />
+            </div>
+            <div class="col-sm-12 col-lg-3 text-center">
+                <h1 class="display-3"> <i class="fas fa-mobile-alt text-success"></i></h1>
+                <p class="text-center">
+                    Lorem ipsum mollis malesuada justo pharetra nibh
+                </p>
+                <hr class="bg-success" />
+            </div>
+            <div class="col-sm-12 col-lg-3 text-center">
+                <h1 class="display-3"> <i class="far fa-calendar-check text-success"></i></h1>
+                <p class="text-center">
+                    Lorem ipsum mollis malesuada justo pharetra nibh
+                </p>
+                <hr class="bg-success" />
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron-fluid mt-5 lightGreen">
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-10 mt-5">
+                                <img src="imgConsult.jpg" class="card-img-top rounded" id="expand" />
+                            </div>
+                            <div class="col-lg-8 col-sm-11 mt-5 mb-5">
+                                <h1 class="display-4 text-success"> Titulo Sobre 1 </h1>
+                                <hr />
+                                <p class="text-justify text-dark text-light">
+                                    Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                                    vestibulum donec habitasse metus vehicula nunc, diam placerat donec a hendrerit lectus sit aenean himenaeos.
+                                </p>
+                                <button class="btn btn-sm btn-outline-success rounded-pill "> Saiba Mais <i class="fas fa-angle-double-right"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-10 mt-5">
+                                <img src="imgConsult.jpg" class="card-img-top rounded" id="expand" />
+                            </div>
+                            <div class="col-lg-8 col-sm-11 mt-5 mb-5">
+                                <h1 class="display-4 text-success"> Titulo Sobre 2 </h1>
+                                <hr />
+                                <p class="text-justify text-dark text-light">
+                                    Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                                    vestibulum donec habitasse metus vehicula nunc, diam placerat donec a hendrerit lectus sit aenean himenaeos.
+                                </p>
+                                <button class="btn btn-sm btn-outline-success rounded-pill "> Saiba Mais <i class="fas fa-angle-double-right"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-12">
+                    <h1 class="display-4 text-center text-success"> Serviços <i class="far fa-sticky-note"></i> </h1>
+                    <p class="text-center">
+                        Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                        vestibulum donec habitasse metus.
+                    </p>
+                    <hr />
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 text-center">
+                <div class="col-lg-3 col-sm-10 ml-5 mr-5">
+                    <h3 class="text-success"> Serviço 1 </h3>
+                    <p class="text-justify ">
+                        Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                        vestibulum.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-10 ml-5 mr-5">
+                    <h3 class="text-success"> Serviço 2 </h3>
+                    <p class="text-justify ">
+                        Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                        vestibulum.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 text-center">
+                <div class="col-lg-3 col-sm-10 ml-5 mr-5">
+                    <h3 class="text-success"> Serviço 1 </h3>
+                    <p class="text-justify ">
+                        Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                        vestibulum.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-10 ml-5 mr-5">
+                    <h3 class="text-success"> Serviço 2  </h3>
+                    <p class="text-justify">
+                        Lorem ipsum mollis malesuada justo pharetra nibh fringilla feugiat integer in, aliquam litora turpis
+                        vestibulum.
+                    </p> 
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4 mb-4">
+                <div class="col-lg-6 col-sm-12 text-center">
+                    <button class="btn btn-lg btn-success rounded-pill"> Leia sobre <i class="fas fa-angle-double-down"></i> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron lightGreen p-0 mt-3">
+        <div class="row justify-content-center  p-0 m-0">
+            <div class="col-lg-6 col-sm-12">
+                <h1 class="text-success display-4 text-center"> Localize <i class="fas fa-map-marker-alt"></i> </h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.971226526238!2d-46.654907385542806!3d-23.569476867775993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0c5df8e57%3A0x8ee02c9ceac3e5e8!2sAlameda%20Fern%C3%A3o%20Cardim%2C%20139%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001403-020!5e0!3m2!1spt-BR!2sbr!4v1582419620813!5m2!1spt-BR!2sbr"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h1 class="text-success display-4 text-center"> Contato <i class="far fa-comments"></i> </h1>
+                <hr />
+                <form class="">
+                    <div class="form-group row">
+                        <div class="col-12 mb-2">
+                            <label for="validationDefault01"> Email * </label>
+                            <input class="form-control" type="email" id="validationDefault01" title="Insira um endereço de email valido" required />
+                            <small id="passwordHelpInline" class="text-muted">
+                                Digite um endereço de email valido: exemplo@gmail.com
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 mb-2">
+                            <label for="validationDefault01"> Assunto * </label>
+                            <input type="text" class="form-control" id="validationDefault01" pattern="[a-z\s]+$" title="Utilize apenas letras" required />
+                            <small id="passwordHelpInline" class="text-muted">
+                                O assunto deve conter apenas letras.
+                            </small>
+                            <div class="valid-feedback">
+                                Ok
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="validationDefault01"> Nome * </label>
+                            <input type="text" class="form-control" id="validationDefault01" pattern="[a-z\s]+$" title="Utilize apenas letras" required />
+                            <small id="passwordHelpInline" class="text-muted">
+                                O seu nome deve conter apenas letras.
+                            </small>
+                            <div class="valid-feedback">
+                                Ok
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12 mb-2">
+                            <label for="validationDefault01"> Texto </label>
+                            <textarea class="form-control" id="validationTextarea" placeholder="Informe o motivo do contato" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12 mb-2 text-right">
+                            <input type="submit" class="btn btn-outline-success rounded-pill" value="Contactar" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center p-0 m-0">
+            <div class="col-lg-12 text-center">
+                <small class=""> <a href="#" class="text-muted"> <i class="fas fa-location-arrow"> </i> CEP: 01403-020 </a>  </small>
+                <small class=""> <a href="#" class="text-muted"> <i class="fab fa-whatsapp"> </i> WhatsApp: (11) 99742-0734 </a> </small>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row justify-content-center mb-2">
+            <small class="text-muted"> Todos os direitos reservados para Felipe & Henry </small>
+        </div>
+    </section>
+    
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/c10d563563.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
